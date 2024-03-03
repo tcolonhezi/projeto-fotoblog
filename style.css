@@ -113,7 +113,7 @@ main h1{
   font-size: 2.4rem;
 }
 
-.galery{
+.gallery{
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
 
@@ -135,10 +135,28 @@ main h1{
   /* manter sempre a proporção correta conf. projeto */
   aspect-ratio: 16/9;
   object-fit: cover;
+
+  transition: all 200ms ease-out;
+
+  /* transição 
+  transition-property: transform, filter;
+  transition-duration: 300ms;
+  transition-delay: 0;
+  transition-timing-function: ease-out;
+  */
+}
+
+.item img:hover{
+  cursor: pointer; 
+  filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+  transform: scale(1.1) rotate(-2deg);
 }
 
 .datails{
   padding: 2.2rem;
+  background-color: var(--color-base-white);
+  z-index: 1;
+  position: relative;
 }
 
 .datails h2{
