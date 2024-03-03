@@ -6,10 +6,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-:root{
+:root {
   font-size: 62.5%;
 }
 
-body{
+body {
   font-size: 1.6rem;
+}
+
+#app{
+  display: grid;
+  /* deixa o header para ir crescendo conforme o conteudo, o main 1fr e o footer também*/
+  grid-template-rows: max-content 1fr max-content; 
+  height: 100vh;
+}
+
+.container{
+  /* cria um bloco para o conteúdo e também, faz o conteúdo ficar sempre centralizado e com um maximo de 112rem 
+  o conteúdo é centralizado com a tag margin*/
+  padding: 1.6rem 3.2rem;
+  width: min(112rem, 100%);
+  margin: 0 auto;
+}
+
+main{
+  overflow-y: scroll;
+  scrollbar-gutter: stable both-edges;
+  
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
