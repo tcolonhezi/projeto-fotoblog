@@ -137,6 +137,7 @@ main h1{
   object-fit: cover;
 
   transition: all 200ms ease-out;
+  display: block;
 
   /* transição 
   transition-property: transform, filter;
